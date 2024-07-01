@@ -22,3 +22,24 @@ From the same directory in the terminal we are working from run
 
 ```
 Replace `<projectName>` with the name of your project
+
+#### Overview on the files created in the project folder we have just created
+
+- **manage.py:** We never have to touch that file, it gives us access to a list of command we are going to use
+- **wsgi.py:** It is a web server django sets up for us, we also dont have to touch it for now
+- **urls.py:** Url routing system. We will add a list of paths here.
+- **Setting.py** This is the main file we are going to be using.
+
+## Step 3
+Lets launch our Django App and see what happens when it runs 
+to run it go to the project you created
+```pwsh
+ cd <projectName>
+```
+And to launch it run
+```pwsh
+python manage.py runserver
+```
+Give it some time and then Open your browser and  see your project on port http://127.0.0.1:8000/
+
+
