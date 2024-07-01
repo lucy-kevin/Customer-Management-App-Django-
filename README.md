@@ -41,7 +41,20 @@ And to launch it run
 python manage.py runserver
 ```
 Give it some time and then Open your browser and  see your project on port http://127.0.0.1:8000/
-# Step 4
+## Step 4
 Lets now create our app 
 ```pwsh
 python manage.py startapp <appName>
+```
+under the app, the main files we will set our emphasis on are:
+- **admin.py** file for setting up the admin panel 
+- **model.py** where we will build our database and class-based objects and it will represent the file structure we're gonna have in the database
+- **veiws.py** the functions or classes that activate the URL patterns go to and trigger to render out a template and so on
+
+## Step 5
+Configure our App, so that our project can be connected to the App we do this by adding `appName` to the **settings.py** file in the project folder under the:
+```python
+INSTALLED_APPS = [
+    ...
+    'appName',
+]
