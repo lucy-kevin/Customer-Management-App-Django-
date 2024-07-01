@@ -41,5 +41,7 @@ And to launch it run
 python manage.py runserver
 ```
 Give it some time and then Open your browser and  see your project on port http://127.0.0.1:8000/
-
-
+# Step 4
+Lets now create our app 
+```pwsh
+python manage.py startapp <appName>
