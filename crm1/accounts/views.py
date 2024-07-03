@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Home page")
+    return reader(request, 'accounts/dashboard.html')
 
 def product(request):
     return HttpResponse("Products")
