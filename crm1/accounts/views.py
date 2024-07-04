@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Home page")
+    return render(request, 'accounts/dashboard.html')
 
 def product(request):
-    return HttpResponse("Products")
+    return render(request, 'accounts/products.html')
 
 def customer(request):
-    return HttpResponse("Customer")
+    return render(request, 'accounts/customer.html')
